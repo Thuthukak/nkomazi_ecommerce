@@ -320,4 +320,9 @@ Route::namespace('App\Http\Controllers\Front')->group(function() {
         Route::get('iyzipay/pay', 'IyzipayController@pay'); 
     });
 
+        // route to about-us page
+        Route::get('/about-us', function () {
+            return view('front.about-us');
+        });
+
 });

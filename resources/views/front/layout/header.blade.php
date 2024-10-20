@@ -215,7 +215,10 @@ $sections = \App\Models\Section::sections();
                             <div class="v-wrapper">
                                 <ul class="v-list animated fadeIn">
 
-
+                                <li class="js-backdrop">
+                                                <a href="javascript:;">
+                                                <i class="ion-ios-add-circle"></i>
+                                                 vendors 
 
                                     @foreach ($sections as $section)
                                         @if (count($section['categories']) > 0) {{-- if the section has child categories, show the section name, but if it doesn't, don't show it --}}
@@ -232,7 +235,6 @@ $sections = \App\Models\Section::sections();
                                                 <button class="v-button ion ion-md-add"></button>
                                                 <div class="v-drop-right" style="width: 700px;">
                                                     <div class="row">
-
 
 
                                                         @foreach ($section['categories'] as $category) {{-- Show the section child categories --}}
@@ -290,6 +292,7 @@ $sections = \App\Models\Section::sections();
                             <span class="superscript-label-discount">>10%</span>
                             </a>
                         </li>
+                        
                         <li class="mega-position">
                             <a>More
                             <i class="fas fa-chevron-down u-s-m-l-9"></i>
@@ -298,7 +301,7 @@ $sections = \App\Models\Section::sections();
                                 <ul>
                                     <li class="menu-title">COMPANY</li>
                                     <li>
-                                        <a href="{{ url('about-us') }}" class="u-c-brand">About Us</a>
+                                        <a href="{{ url('/about-us') }}" class="u-c-brand">About Us</a>
                                     </li>
                                     <li>
                                         <a href="{{ url('contact') }}">Contact Us</a>

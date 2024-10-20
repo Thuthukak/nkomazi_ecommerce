@@ -14,7 +14,7 @@
                 <ul class="bread-crumb">
                     <li class="has-separator">
                         <i class="ion ion-md-home"></i>
-                        <a href="index.html">Home</a>
+                        <a href="{{ url('/') }}">
                     </li>
                     <li class="is-marked">
                         <a href="{{ url('user/orders') }}">Orders</a>
@@ -46,11 +46,11 @@
                     </tr>
                     <tr>
                         <td>Order Total</td>
-                        <td>EGP{{ $orderDetails['grand_total'] }}</td>
+                        <td>R{{ $orderDetails['grand_total'] }}</td>
                     </tr>
                     <tr>
                         <td>Shipping Charges</td>
-                        <td>EGP{{ $orderDetails['shipping_charges'] }}</td>
+                        <td>R{{ $orderDetails['shipping_charges'] }}</td>
                     </tr>
 
                     @if ($orderDetails['coupon_code'] != '')
@@ -60,7 +60,7 @@
                         </tr>
                         <tr>
                             <td>Coupon Amount</td>
-                            <td>EGP{{ $orderDetails['coupon_amount'] }}</td>
+                            <td>R{{ $orderDetails['coupon_amount'] }}</td>
                         </tr>
                     @endif
 
