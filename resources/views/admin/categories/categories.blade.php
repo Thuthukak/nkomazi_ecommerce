@@ -52,10 +52,10 @@
                                             @endif
                                             <tr>
                                                 <td>{{ $category['id'] }}</td>
-                                                <td>{{ $category['category_name'] }}</td>
+                                                <td>{{ $category['category_name']  ?? 'N/A'  }}</td>
                                                 <td>{{ $parent_category }}</td> {{-- Through the relationship --}}
-                                                <td>{{ $category['section']['name'] }}</td> {{-- Through the relationship --}}
-                                                <td>{{ $category['url'] }}</td>
+                                                <td>{{ $category['section']['name'] ?? 'N/A'  }}</td> {{-- Through the relationship --}}
+                                                <td>{{ $category['url']  ?? 'N/A' }}</td>
                                                 <td>
                                                     @if ($category['status'] == 1)
                                                         <a class="updateCategoryStatus" id="category-{{ $category['id'] }}" category_id="{{ $category['id'] }}" href="javascript:void(0)"> {{-- Using HTML Custom Attributes. Check admin/js/custom.js --}}

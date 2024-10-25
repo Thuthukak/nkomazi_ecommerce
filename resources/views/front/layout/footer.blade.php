@@ -90,10 +90,10 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="mailto:info@multi-vendore-commerce.com">
+                                <a href="mailto:info@nkomazi.com">
                                 <i class="fas fa-envelope u-s-m-r-9"></i>
                                 <span>
-                                info@multi-vendore-commerce.com</span>
+                                info@nkomazi.com</span>
                                 </a>
                             </li>
                         </ul>
@@ -104,6 +104,12 @@
         <!-- Mid-Footer /- -->
         <!-- Bottom-Footer -->
         <div class="bottom-footer-wrapper">
+            <div class="justify-content-center gap-2">
+                <i class="fab fa-cc-visa fa-2x"></i>
+                <i class="fab fa-cc-mastercard fa-2x"></i>
+                <i class="fab fa-cc-amex fa-2x"></i>
+                <i class="fab fa-cc-paypal fa-2x"></i>
+            </div>
             <div class="social-media-wrapper">
                 <ul class="social-media-list">
                     <li>

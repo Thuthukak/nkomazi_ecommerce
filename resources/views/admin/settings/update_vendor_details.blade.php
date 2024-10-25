@@ -333,7 +333,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="account_holder_name">Account Holder Name</label>
-                                        <input type="text" class="form-control" id="account_holder_name" placeholder="Enter Account Holder Name" name="account_holder_name"  @if (isset($vendorDetails['account_holder_name'])) value="{{ $vendorDetails['account_holder_name'] }}" @endif> {{-- $vendorDetails was passed from AdminController --}}
+                                        <input type="text" class="form-control" id="account_holder_name" placeholder="Enter Account Holder Name" name="account_holder_name"  @if (isset($vendorDetails['account_holder_name'])) value="{{ $vendorDetails['account_holder_name']  }}" @endif> {{-- $vendorDetails was passed from AdminController --}}
                                     </div>
                                     <div class="form-group">
                                         <label for="bank_name">Bank Name</label>
@@ -344,8 +344,8 @@
                                         <input type="text" class="form-control" id="account_number" placeholder="Enter Account Number" name="account_number"  @if (isset($vendorDetails['account_number'])) value="{{ $vendorDetails['account_number'] }}" @endif> {{-- $vendorDetails was passed from AdminController --}}
                                     </div>
                                     <div class="form-group">
-                                        <label for="bank_ifsc_code">Bank IFSC Code</label>
-                                        <input type="text" class="form-control" id="bank_ifsc_code" placeholder="Enter Bank IFSC Code" name="bank_ifsc_code"  @if (isset($vendorDetails['bank_ifsc_code'])) value="{{ $vendorDetails['bank_ifsc_code'] }}" @endif> {{-- $vendorDetails was passed from AdminController --}}
+                                        <label for="bank_ifsc_code">Branch Code</label>
+                                        <input type="text" class="form-control" id="bank_ifsc_code" placeholder="Enter Branch Code" name="bank_ifsc_code"  @if (isset($vendorDetails['bank_ifsc_code'])) value="{{ $vendorDetails['bank_ifsc_code'] }}" @endif> {{-- $vendorDetails was passed from AdminController --}}
                                     </div>
                                     <button type="submit" class="btn btn-primary mr-2">Submit</button>
                                     <button type="reset"  class="btn btn-light">Cancel</button>
